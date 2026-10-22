@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dwight James - Dashboard Portfolio</title>
+<meta name="description" content="Contact center operations dashboards designed by Dwight James, shown with sample data.">
+<style>
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #fbfbfa;
+    color: #222;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .page { max-width: 1100px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { font-size: 30px; font-weight: 600; margin: 0 0 4px; }
+  .sub { color: #666; margin: 0 0 18px; }
+  .intro { max-width: 720px; margin: 0 0 8px; }
+  h2 { font-size: 21px; font-weight: 600; margin: 48px 0 6px; padding-bottom: 6px; border-bottom: 2px solid #9c4a22; }
+  .section-note { max-width: 720px; color: #444; margin: 0 0 20px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .item a { display: block; border: 1px solid #ddd; background: #fff; }
+  .item a:hover { border-color: #999; }
+  .item a:focus-visible { outline: 2px solid #9c4a22; outline-offset: 2px; }
+  .item img { display: block; width: 100%; height: auto; }
+  .item h3 { font-size: 16px; font-weight: 600; margin: 10px 0 2px; }
+  .item p { margin: 0; color: #555; font-size: 15px; }
+  footer { margin-top: 56px; padding-top: 14px; border-top: 1px solid #ddd; color: #666; font-size: 14px; max-width: 720px; }
+  #viewer { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.88); z-index: 10; overflow: auto; padding: 16px; }
+  #viewer.open { display: block; }
+  #viewer .bar { display: flex; justify-content: space-between; align-items: center; color: #eee; max-width: 1800px; margin: 0 auto 10px; }
+  #viewer button { font: inherit; background: #eee; color: #222; border: 0; padding: 6px 14px; cursor: pointer; }
+  #viewer img { display: block; max-width: 1800px; width: 100%; margin: 0 auto; background: #fff; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Dwight James</h1>
+  <p class="sub">BI development and analytics &middot; Durham, NC</p>
+  <p class="intro">These are 11 dashboards I designed for a contact center operation. They go from the intraday pages supervisors kept open all day up to the views managers used for weekly reviews and coaching. Click any of them to see it full size.</p>
+  <p class="intro">Everything shown is sample data. Client and employee names are made up and the counts are scaled down, but the layouts and measures are my own design.</p>
+
+  <h2>Daily operations</h2>
+  <p class="section-note">Each channel gets its own page. The top row has the main numbers for the day, and the visuals below break them out by queue and by hour so a supervisor can see where things started to slip.</p>
+  <div class="grid">
+    <div class="item"><a href="img/gallery_1.png"><img src="img/gallery_1.png" alt="Today's Operational Pulse dashboard" loading="lazy"></a>
+      <h3>Today's Operational Pulse</h3><p>Live wait and handle times compared to the same day last week, a card for each queue, and volume by hour. The queue type buttons filter the whole page.</p></div>
+    <div class="item"><a href="img/gallery_2.png"><img src="img/gallery_2.png" alt="Voice Performance dashboard" loading="lazy"></a>
+      <h3>Voice Performance</h3><p>Calls offered, answered and abandoned by queue, plus callbacks and speed to answer by hour.</p></div>
+    <div class="item"><a href="img/gallery_3.png"><img src="img/gallery_3.png" alt="CE Email Performance dashboard" loading="lazy"></a>
+      <h3>CE Email Performance</h3><p>Email backlog by queue with the age of the oldest item, how old the backlog is, and emails received vs. answered by hour.</p></div>
+    <div class="item"><a href="img/gallery_4.png"><img src="img/gallery_4.png" alt="CS Email Performance dashboard" loading="lazy"></a>
+      <h3>CS Email Performance</h3><p>Same layout as the CE page but for the customer support queues, so both teams read their numbers the same way.</p></div>
+    <div class="item"><a href="img/gallery_5.png"><img src="img/gallery_5.png" alt="Claims Performance dashboard" loading="lazy"></a>
+      <h3>Claims Performance</h3><p>Claims queues with aging buckets from under a day to 5+ days, so it's clear which work is sitting too long.</p></div>
+  </div>
+
+  <h2>Customer service levels</h2>
+  <p class="section-note">Service tracked by client line. Red, yellow and green thresholds show which lines missed target without having to read every row.</p>
+  <div class="grid">
+    <div class="item"><a href="img/gallery_6.png"><img src="img/gallery_6.png" alt="Customer Performance dashboard" loading="lazy"></a>
+      <h3>Customer Performance</h3><p>Every client line in one table with conditional formatting, a date range and a customer filter.</p></div>
+    <div class="item"><a href="img/gallery_7.png"><img src="img/gallery_7.png" alt="Priority Customers dashboard" loading="lazy"></a>
+      <h3>Priority Customers</h3><p>A smaller view for the highest priority accounts; the cards at the top turn red or green based on the same thresholds.</p></div>
+  </div>
+
+  <h2>Leadership and coaching</h2>
+  <p class="section-note">Pages for managers and team leads to see how each team is trending against target and which agents to coach first.</p>
+  <div class="grid">
+    <div class="item"><a href="img/gallery_8.png"><img src="img/gallery_8.png" alt="Executive Performance Pulse dashboard" loading="lazy"></a>
+      <h3>Executive Performance Pulse</h3><p>Average score against target by review period, the tier mix for each team lead, and a results table by team lead.</p></div>
+    <div class="item"><a href="img/gallery_9.png"><img src="img/gallery_9.png" alt="Team Lead Coaching View dashboard" loading="lazy"></a>
+      <h3>Team Lead Coaching View</h3><p>One team lead's daily score trend, the agent to coach first, and every agent's numbers against target.</p></div>
+    <div class="item"><a href="img/gallery_10.png"><img src="img/gallery_10.png" alt="Operations Pulse dashboard" loading="lazy"></a>
+      <h3>Operations Pulse</h3><p>Weekly numbers with month to date, year to date and 13-week trend lines, channel mix by week, and this year vs. last year by month.</p></div>
+    <div class="item"><a href="img/gallery_11.png"><img src="img/gallery_11.png" alt="Operations Pulse table view" loading="lazy"></a>
+      <h3>Operations Pulse (table view)</h3><p>The same measures as a table by week, month and year with the prior year next to it. This is the view people exported to CSV.</p></div>
+  </div>
+
+  <footer>All names, phone numbers and figures on this page are sample data. Client names are Microsoft's sample company names (Contoso, Northwind and so on) and the counts are scaled down.</footer>
+</div>
+
+<div id="viewer" role="dialog" aria-modal="true" aria-label="Full size dashboard">
+  <div class="bar"><span id="viewer-title"></span><button type="button" id="viewer-close">Close</button></div>
+  <img id="viewer-img" alt="">
+</div>
+
+<script>
+  var viewer = document.getElementById('viewer');
+  var vImg = document.getElementById('viewer-img');
+  var vTitle = document.getElementById('viewer-title');
+  document.querySelectorAll('.item a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      vImg.src = a.getAttribute('href');
+      vImg.alt = a.querySelector('img').alt;
+      vTitle.textContent = a.parentNode.querySelector('h3').textContent;
+      viewer.classList.add('open');
+      document.getElementById('viewer-close').focus();
+    });
+  });
+  function closeViewer() { viewer.classList.remove('open'); }
+  document.getElementById('viewer-close').addEventListener('click', closeViewer);
+  viewer.addEventListener('click', function (e) { if (e.target === viewer) closeViewer(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeViewer(); });
+</script>
+</body>
+</html>
